@@ -4,7 +4,9 @@
 
 ## Setup Commands
 ### Run Node Server
-npm start
+```
+npm run devstart(npm run serverstart)
+```
 
 ## Model Definitions
 
@@ -15,3 +17,33 @@ npm start
 * catalog/<object>/create — The form to create a new book, bookinstance, genre, or author (e.g. /catalog/book/create).
 * catalog/<object>/<id>/update — The form to update a specific book, bookinstance, genre, or author with the given _id field value (e.g. /catalog/book/584493c1f4887f06c0e67d37/update).
 * catalog/<object>/<id>/delete — The form to delete a specific book, bookinstance, genre, author with the given _id field value (e.g. /catalog/book/584493c1f4887f06c0e67d37/delete).
+
+## Tech Stack
+### Mongoose
+A npm module that controls MongoDB instance.
+
+### ExpressJS
+A nodejs web framework.
+
+### Pug
+A Template engine.
+
+## npm Modules
+express-generator(npm install express-generator -g)
+nodemon(npm install nodemon -g)
+
+
+## ExpressJS Setup
+```
+express <app name> --view=pug
+cd <app name>
+npm install
+```
+then, add the following code to script section in package.json
+```
+  "scripts": {
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www",
+    "serverstart": "DEBUG=express-locallibrary-tutorial:* npm run devstart"
+  },
+```
