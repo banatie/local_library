@@ -31,6 +31,7 @@ A Template engine.
 ## npm Modules
 express-generator(npm install express-generator -g)
 nodemon(npm install nodemon -g)
+async(npm install async)
 
 
 ## ExpressJS Setup
