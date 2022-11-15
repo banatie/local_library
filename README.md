@@ -32,6 +32,7 @@ A Template engine.
 express-generator(npm install express-generator -g)
 nodemon(npm install nodemon -g)
 async(npm install async)
+luxon(npm install luxon)
 
 
 ## ExpressJS Setup
